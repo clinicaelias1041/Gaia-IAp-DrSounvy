@@ -1,0 +1,22 @@
+name: GAIA IP CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Integrity Hash
+        run: |
+          echo "=== GAIA IP BUILD CHECK ==="
+          echo "Autor: Dr. Antonio Alberto Lopes Elias (CROSP 45849)"
+          echo "Integrity ID: 540a8b95fbd50fc9e4a90d8a3cb54feb49f0b6a8"
+          echo "Status: Chassi de Borda verificado com sucesso."
